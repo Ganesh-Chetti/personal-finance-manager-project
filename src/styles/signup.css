@@ -1,0 +1,61 @@
+/* Signup Page Styling */
+.signup-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://geolake.com/assets/images/newdesign/section-bg.png') no-repeat center center/cover;
+  }
+  
+  /* Signup Card */
+  .signup-card {
+    background: #e8f5e9; /* Light green background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  .signup-card h2 {
+    margin-bottom: 20px;
+    color: #2e327d; /* Dark green */
+  }
+  
+  .signup-card input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .signup-card button {
+    width: 100%;
+    padding: 10px;
+    background: #226c8c; /* Medium green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .signup-card button:hover {
+    background: #2e487d; /* Dark green */
+    color: black;
+  }
+  
+  .signup-link {
+    color: blue;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .signup-link:hover {
+    color: black;
+  }
+  

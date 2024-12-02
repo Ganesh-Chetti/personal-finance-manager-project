@@ -1,0 +1,102 @@
+/* Summary.css */
+
+.summary-container {
+    font-family: Arial, sans-serif;
+    margin-top: 80px;
+    opacity: 0.9;
+  }
+  
+  .summary-content {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .summary-heading {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .income-section {
+    margin-bottom: 30px;
+  }
+  
+  .input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .input-row label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #201f1f;
+  }
+  
+  .input-row .input-field {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #716c6c;
+    border-radius: 5px;
+  }
+  
+  .total-income {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #373333;
+  }
+  
+  .expense-summary, .remaining-balance {
+    margin-top: 20px;
+  }
+  
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #372f2f;
+  }
+  
+  .expense-summary p, .remaining-balance p {
+    font-size: 16px;
+    color: #0f5bc4;
+  }
+  
+  input[type="number"] {
+    text-align: right;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .summary-content {
+      padding: 20px;
+    }
+  
+    .input-row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .input-row label {
+      margin-bottom: 5px;
+    }
+  
+    .input-row .input-field {
+      width: 100%;
+    }
+  }
+  
+
+.input-field::-webkit-inner-spin-button,
+.input-field::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+

@@ -1,0 +1,336 @@
+.home-container {
+  background-image: url('https://img.freepik.com/premium-vector/mobile-payment-bill-laptop-with-calculator-money-credit-card-finance-management-symbol-concept-isometric_201904-668.jpg');
+  background-size: contain; /* Ensures the image fits within the container without stretching */
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  background-color:#336699; /* Adds a fallback color */
+}
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #34495e;
+  color: #fff;
+}
+
+.navbar-logo h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-btn {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #2ecc71;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-btn:hover {
+  background-color: #27ae60;
+}
+
+/* User profile styles */
+.user-profile {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.user-icon {
+  color: #fff;
+  margin-right: 0.5rem;
+}
+
+.user-name {
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #ecf0f1;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.dropdown-item {
+  padding: 0.5rem 1rem;
+  color: #34495e;
+  text-align: left;
+  background-color: transparent;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+
+/* Card styles */
+.carousel-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 15rem;
+  gap: 10rem;
+}
+
+.card {
+  background-color: #ecf0f1;
+  border: 1px solid #bdc3c7;
+  color:maroon;
+  padding: 3rem;
+  width: 280px;
+  text-align:center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color:grey;
+  color: #fff;
+  opacity: 0.9;
+}
+
+/* Login message styles */
+.login-message {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.login-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #3498db;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #2980b9;
+}
+
+.custom-alert {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  text-align: center;
+  overflow: hidden;
+}
+
+.alert-header {
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.alert-content {
+  padding: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.alert-footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.alert-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.paid-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.ignore-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.alert-success .alert-header {
+  background-color: #4caf50;
+}
+
+.alert-success .alert-content {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar-logo h1 {
+    margin-bottom: 1rem;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+  }
+
+  .nav-btn {
+    margin: 0.5rem 0;
+  }
+  .carousel-cards{
+    margin: 5rem;
+    gap: 0rem;
+  }
+  
+}
+
+
+@media (max-width: 768px) {
+  .circle-photo img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .card {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .carousel-cards {
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem;
+    gap: 5rem;
+  }
+
+  .custom-alert {
+    top: 20%; /* Adjusts position for smaller screens */
+    width: 50%; /* Takes up most of the screen width */
+    padding: 10px; /* Reduces padding for smaller screens */
+  }
+
+  .alert-header {
+    font-size: 16px; /* Slightly smaller font size */
+    padding: 8px;
+  }
+
+  .alert-content {
+    font-size: 14px; /* Adjust text size for readability */
+    padding: 15px;
+  }
+
+  .alert-footer {
+    flex-direction: column; /* Stacks buttons vertically */
+    gap: 10px; /* Adds spacing between buttons */
+  }
+
+  .alert-btn {
+    width: 100%; /* Full width for better visibility */
+    padding: 10px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .navbar-logo h1 {
+    font-size: 1.2rem;
+  }
+
+  .nav-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .user-name {
+    display: none;
+  }
+
+  .circle-photo img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .carousel-cards {
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem;
+  }
+
+  .card {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .custom-alert {
+    top: 20%; /* Further adjusts position for very small screens */
+    font-size: 14px; /* Overall smaller font */
+  }
+
+  .alert-header {
+    font-size: 14px;
+  }
+
+  .alert-content {
+    font-size: 12px;
+  }
+
+  .alert-footer {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .alert-btn {
+    width: 100%;
+    font-size: 12px;
+    padding: 8px;
+  }
+}

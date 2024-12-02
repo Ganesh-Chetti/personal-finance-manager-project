@@ -1,0 +1,70 @@
+/* Login Page Styling */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay for contrast */
+    background: url('https://geolake.com/assets/images/newdesign/section-bg.png') no-repeat center center/cover;
+  }
+  
+  /* Login Card */
+  .login-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  .login-card h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .login-card input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .login-card button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .login-card button:hover {
+    background: #0056b3;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 12px;
+  }
+  
+  .success-message {
+    color: green;
+    font-size: 12px;
+  }
+  
+  .signup-link {
+    color: blue;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .signup-link:hover {
+    color: black;
+  }
+  
