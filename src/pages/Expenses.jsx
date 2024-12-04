@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
-// import "../styles/expenses.css";
+import "../styles/expense.css";
 const Expenses = () => {
   const initialExpenses = {
     essential: {
