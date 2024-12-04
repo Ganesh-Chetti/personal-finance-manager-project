@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import Signup from "./Pages/Signup.jsx";
-import Login from "./Pages/Login.jsx";
-import Home from "./Pages/Home.jsx";
-import Expenses from "./Pages/Expenses.jsx";
-import Summary from "./Pages/Summary.jsx";
+import Signup from "./Pages/Signup";
+import Login from "./Pages/Login";
+import Home from "./Pages/Home";
+import Expenses from "./Pages/Expenses";
+import Summary from "./Pages/Summary";
 //git 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(!!localStorage.getItem("currentUser"));
