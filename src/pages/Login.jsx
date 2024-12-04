@@ -31,7 +31,10 @@ const Login = () => {
     if (user) {
       // Login success
       localStorage.setItem('currentUser', JSON.stringify(user)); // Save the logged-in user
-      navigate('/home', { state: { fromLogin: true } });  // Redirect to Home page
+      if(localStorage.getItem('currentUser')){
+        navigate('/home', { state: { fromLogin: true } });
+      }
+      // Redirect to Home page
     } else {
       setPasswordError('Invalid username or password.');
     }
