@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Navbar from "../components/navbar.jsx";
+import Navbar from "../components/Navbar.jsx";
 import '../styles/summary.css'; // Import the custom CSS
 
 const Summary = () => {

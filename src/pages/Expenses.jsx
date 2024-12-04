@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Navbar from "../components/navbar";
+import Navbar from "../components/Navbar";
 import "../styles/expenses.css";
 
 const Expenses = () => {
