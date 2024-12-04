@@ -5,7 +5,7 @@ import Login from "./pages/login.jsx";
 import Home from "./pages/home.jsx";
 import Expenses from "./pages/expenses.jsx";
 import Summary from "./pages/summary.jsx";
-
+//git 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(!!localStorage.getItem("currentUser"));
 
