@@ -1,98 +1,84 @@
-
-
 .summary-container {
-    font-family: Arial, sans-serif;
-    margin-top: 80px;
-    opacity: 0.9;
-  }
-  
-  .summary-content {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #f9f9f9;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .summary-heading {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    color: #333;
-    margin-bottom: 30px;
-  }
-  
-  .income-section {
-    margin-bottom: 30px;
-  }
-  
-  .input-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-  }
-  
-  .input-row label {
-    font-size: 16px;
-    font-weight: 500;
-    color: #201f1f;
-  }
-  
-  .input-row .input-field {
-    width: 50%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #716c6c;
-    border-radius: 5px;
-  }
-  
-  .total-income {
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: 600;
-    color: #373333;
-  }
-  
-  .expense-summary, .remaining-balance {
-    margin-top: 20px;
-  }
-  
-  h3 {
-    font-size: 18px;
-    font-weight: 600;
-    color: #372f2f;
-  }
-  
-  .expense-summary p, .remaining-balance p {
-    font-size: 16px;
-    color: #0f5bc4;
-  }
-  
-  input[type="number"] {
-    text-align: right;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .summary-content {
-      padding: 20px;
-    }
-  
-    .input-row {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .input-row label {
-      margin-bottom: 5px;
-    }
-  
-    .input-row .input-field {
-      width: 100%;
-    }
-  }
-  
+  font-family: Arial, sans-serif;
+  margin-top: 80px;
+  opacity: 0.9;
+}
+
+.summary-content {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: rgba(15, 15, 15, 0.867);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.summary-heading {
+  color: #d7d234;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.income-section {
+  margin-bottom: 30px;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.input-row label {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.input-row .input-field {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: rgba(2, 2, 2, 0.744);
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+
+.total-income {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ef0000;
+}
+
+.expense-summary,
+.remaining-balance {
+  margin-top: 20px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ff9d00;
+}
+
+.expense-summary p,
+.remaining-balance p {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+input[type="number"] {
+  text-align: right;
+}
+
+.input-row .input-field:focus {
+  border-color: #fb6807;
+  outline: none;
+}
 
 .input-field::-webkit-inner-spin-button,
 .input-field::-webkit-outer-spin-button {
@@ -100,3 +86,86 @@
   margin: 0;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  .summary-content {
+    padding: 20px;
+  }
+
+  .input-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .input-row label {
+    margin-bottom: 5px;
+  }
+
+  .input-row .input-field {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .summary-container {
+    margin-top: 50px;
+  }
+
+  .summary-heading {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .input-row {
+    margin-bottom: 10px;
+  }
+
+  .input-row label {
+    font-size: 16px;
+  }
+
+  .input-row .input-field {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .total-income,
+  h3 {
+    font-size: 16px;
+  }
+
+  .expense-summary p,
+  .remaining-balance p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  .summary-content {
+    padding: 15px;
+    box-shadow: none;
+  }
+
+  .summary-heading {
+    font-size: 18px;
+  }
+
+  .input-row label {
+    font-size: 14px;
+  }
+
+  .input-row .input-field {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .total-income,
+  h3 {
+    font-size: 14px;
+  }
+
+  .expense-summary p,
+  .remaining-balance p {
+    font-size: 12px;
+  }
+}

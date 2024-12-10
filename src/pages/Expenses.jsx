@@ -159,10 +159,10 @@ const Expenses = () => {
 
         {/* Total Expenses */}
         <div className="expenses-summary">
-          <h3>
+          <h2>
             Total Expenses: ₹
             {calculateTotal("essential") + calculateTotal("nonEssential")}
-          </h3>
+          </h2>
           <button onClick={handleSave} className="expenses-button">
             Save Expenses
           </button>

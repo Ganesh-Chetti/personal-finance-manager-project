@@ -1,13 +1,16 @@
+/* General Styles */
 .home-container {
-  background-image: url('https://img.freepik.com/premium-vector/mobile-payment-bill-laptop-with-calculator-money-credit-card-finance-management-symbol-concept-isometric_201904-668.jpg');
-  background-size: contain; /* Ensures the image fits within the container without stretching */
+  background-image: url('https://static.vecteezy.com/system/resources/previews/000/695/792/non_2x/electronic-bill-payment-concept-vector.jpg'); /* Use a higher resolution image here */
+  background-size: cover; 
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 100vh;
-  background-color:#336699; /* Adds a fallback color */
+  min-height: 100vh; /* Ensures the container takes the full viewport height */
+  background-color: #336699; 
 }
+
 /* Navbar styles */
 .navbar {
+  padding-top: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -87,7 +90,6 @@
   color: #fff;
 }
 
-
 /* Card styles */
 .carousel-cards {
   display: flex;
@@ -97,22 +99,27 @@
   gap: 10rem;
 }
 
+.card h3 {
+  color: black;
+}
+
 .card {
-  background-color: #ecf0f1;
+  background-color: rgba(255, 251, 246, 0.696);
   border: 1px solid #bdc3c7;
-  color:maroon;
+  color: maroon;
+  font-weight: bolder;
   padding: 3rem;
   width: 280px;
-  text-align:center;
+  text-align: center;
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  transition: transform 0.2s, background-color 0.2s;
+  transition: transform 0.2s, background-color 0.2s, color 0.2s;
 }
 
 .card:hover {
   transform: scale(1.05);
-  background-color:grey;
+  background-color: grey;
   color: #fff;
   opacity: 0.9;
 }
@@ -139,6 +146,7 @@
   background-color: #2980b9;
 }
 
+/* Custom Alert Styles */
 .custom-alert {
   position: fixed;
   top: 20%;
@@ -202,8 +210,7 @@
   font-weight: bold;
 }
 
-
-/* Responsive styles */
+/* Responsive Styles */
 @media (max-width: 1024px) {
   .navbar {
     flex-direction: column;
@@ -221,20 +228,14 @@
   .nav-btn {
     margin: 0.5rem 0;
   }
-  .carousel-cards{
+
+  .carousel-cards {
     margin: 5rem;
     gap: 0rem;
   }
-  
 }
 
-
 @media (max-width: 768px) {
-  .circle-photo img {
-    width: 120px;
-    height: 120px;
-  }
-
   .card {
     width: 90%;
     margin: 0 auto;
@@ -253,26 +254,14 @@
     padding: 10px; /* Reduces padding for smaller screens */
   }
 
-  .alert-header {
-    font-size: 16px; /* Slightly smaller font size */
-    padding: 8px;
-  }
-
-  .alert-content {
-    font-size: 14px; /* Adjust text size for readability */
-    padding: 15px;
-  }
-
   .alert-footer {
-    flex-direction: column; /* Stacks buttons vertically */
-    gap: 10px; /* Adds spacing between buttons */
+    flex-direction: column;
+    gap: 10px;
   }
 
   .alert-btn {
     width: 100%; /* Full width for better visibility */
-    padding: 10px;
   }
-
 }
 
 @media (max-width: 480px) {
@@ -289,15 +278,6 @@
     padding: 0.5rem 0.8rem;
   }
 
-  .user-name {
-    display: none;
-  }
-
-  .circle-photo img {
-    width: 100px;
-    height: 100px;
-  }
-
   .carousel-cards {
     flex-direction: column;
     gap: 2rem;
@@ -307,30 +287,17 @@
   .card {
     width: 100%;
     margin: 0 auto;
-    text-align: center;
   }
 
   .custom-alert {
-    top: 20%; /* Further adjusts position for very small screens */
-    font-size: 14px; /* Overall smaller font */
-  }
-
-  .alert-header {
     font-size: 14px;
   }
 
-  .alert-content {
-    font-size: 12px;
-  }
-
   .alert-footer {
-    flex-direction: column;
     gap: 8px;
   }
 
   .alert-btn {
-    width: 100%;
     font-size: 12px;
-    padding: 8px;
   }
 }
