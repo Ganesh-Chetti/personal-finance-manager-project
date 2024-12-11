@@ -5,7 +5,7 @@ import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Expenses from "./pages/Expenses";
 import Summary from "./pages/Summary";
-//git 
+
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(!!localStorage.getItem("currentUser"));
 

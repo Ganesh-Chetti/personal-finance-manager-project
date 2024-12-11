@@ -14,13 +14,13 @@ const Home = () => {
   const [alertSuccess, setAlertSuccess] = useState(false);
 
   useEffect(() => {
-    // Check if the user is logged in
+    
     const currentUser = JSON.parse(localStorage.getItem("currentUser"));
     if (currentUser) {
       setIsLoggedIn(true);
       setUser(currentUser); // Set the logged-in user
 
-      // Check if the user navigated from the login page
+
       if (location.state?.fromLogin) {
         const today = new Date();
         const specificDates = [25, 26, 27, 28, 29, 30, 31, 1, 2, 3, 4, 5];
@@ -34,16 +34,16 @@ const Home = () => {
   }, [location]);
 
   const handleIgnore = () => {
-    setShowAlert(false); // Hide the alert
+    setShowAlert(false); 
     setTimeout(() => {
       setShowAlert(true); // Show the alert again after 5 seconds
-    }, 5000); // 5 seconds delay
+    }, 5000); 
   };
   
   const handlePaid = () => {
     setAlertContent("Thank you for confirming.");
     setAlertSuccess(true);
-    setTimeout(() => setShowAlert(false), 2000); // Auto-close after 2 seconds
+    setTimeout(() => setShowAlert(false), 2000); 
   };
   
 

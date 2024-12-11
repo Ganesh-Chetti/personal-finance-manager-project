@@ -10,11 +10,9 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    // Reset error messages on each login attempt
     setUsernameError('');
     setPasswordError('');
 
-    // Basic validation
     if (!username) {
       setUsernameError('Username is required.');
       return;
@@ -29,10 +27,8 @@ const Login = () => {
     const user = users.find((user) => user.username === username && user.password === password);
 
     if (user) {
-      // Login success
-      localStorage.setItem('currentUser', JSON.stringify(user)); // Save the logged-in user
+      localStorage.setItem('currentUser', JSON.stringify(user)); 
         navigate('/home', { state: { fromLogin: true } });
-      // Redirect to Home page
     } else {
       setPasswordError('Invalid username or password.');
     }

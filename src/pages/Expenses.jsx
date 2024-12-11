@@ -44,7 +44,6 @@ const Expenses = () => {
     localStorage.setItem("expenses", JSON.stringify(expenses));
     setSuccessMessage("Expenses saved successfully!");
 
-    // Hide the success message after 3 seconds
     setTimeout(() => setSuccessMessage(""), 3000);
   };
 

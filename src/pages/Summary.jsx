@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar.jsx";
-import '../styles/summary.css'; // Import the custom CSS
+import '../styles/summary.css'; 
 
 const Summary = () => {
   const [netSalary, setNetSalary] = useState(parseInt(localStorage.getItem("salary")) || 0);
@@ -30,7 +30,6 @@ const Summary = () => {
     }
   };
 
-  // Saving incomes to localStorage whenever values change
   useEffect(() => {
     localStorage.setItem("salary", netSalary);
     localStorage.setItem("partnersSalary", partnersSalary);

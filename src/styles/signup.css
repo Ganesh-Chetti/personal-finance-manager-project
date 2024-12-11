@@ -7,9 +7,8 @@
     background: url('https://geolake.com/assets/images/newdesign/section-bg.png') no-repeat center center/cover;
   }
   
-  /* Signup Card */
   .signup-card {
-    background: #e8f5e9; /* Light green background */
+    background: #e8f5e9; 
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -20,7 +19,7 @@
   
   .signup-card h2 {
     margin-bottom: 20px;
-    color: #2e327d; /* Dark green */
+    color: #2e327d; 
   }
   
   .signup-card input {
@@ -35,7 +34,7 @@
   .signup-card button {
     width: 100%;
     padding: 10px;
-    background: #226c8c; /* Medium green */
+    background: #226c8c; 
     color: white;
     border: none;
     border-radius: 5px;
@@ -45,7 +44,7 @@
   }
   
   .signup-card button:hover {
-    background: #2e487d; /* Dark green */
+    background: #2e487d; 
     color: black;
   }
   

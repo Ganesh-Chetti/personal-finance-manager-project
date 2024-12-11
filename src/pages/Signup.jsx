@@ -13,7 +13,6 @@ const Signup = () => {
   const navigate = useNavigate();
 
   const handleSignup = () => {
-    // Clear previous error messages
     setUsernameError('');
     setPasswordError('');
     setConfirmPasswordError('');
@@ -51,24 +50,24 @@ const Signup = () => {
       localStorage.setItem('users', JSON.stringify(users));
       setSuccessMessage('Signup successful! Redirecting to login...');
       setTimeout(() => {
-        navigate('/login');  // Redirect to login page after a short delay
+        navigate('/login');
       }, 2000);
     }
   };
 
   const handleUsernameChange = (e) => {
     setUsername(e.target.value);
-    if (e.target.value) setUsernameError('');  // Clear error when user starts typing
+    if (e.target.value) setUsernameError(''); 
   };
 
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
-    if (e.target.value) setPasswordError('');  // Clear error when user starts typing
+    if (e.target.value) setPasswordError('');  
   };
 
   const handleConfirmPasswordChange = (e) => {
     setConfirmPassword(e.target.value);
-    if (e.target.value) setConfirmPasswordError('');  // Clear error when user starts typing
+    if (e.target.value) setConfirmPasswordError('');  
   };
 
   return (
