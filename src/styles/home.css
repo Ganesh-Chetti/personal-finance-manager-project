@@ -1,14 +1,14 @@
-/* General Styles */
+
 .home-container {
   background-image: url('https://static.vecteezy.com/system/resources/previews/000/695/792/non_2x/electronic-bill-payment-concept-vector.jpg'); /* Use a higher resolution image here */
   background-size: cover; 
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 100vh; /* Ensures the container takes the full viewport height */
+  min-height: 100vh; 
   background-color: #336699; 
 }
 
-/* Navbar styles */
+
 .navbar {
   padding-top: 30px;
   display: flex;
@@ -45,7 +45,7 @@
   background-color: #27ae60;
 }
 
-/* User profile styles */
+
 .user-profile {
   display: flex;
   align-items: center;
@@ -54,16 +54,16 @@
 }
 
 .user-icon {
-  color: #fff;
+  color: #edefed;
   margin-right: 0.5rem;
 }
 
 .user-name {
-  font-size: 1rem;
-  color: #fff;
+  font-size: 1.5rem;
+  color: #f6f5f5;
 }
 
-/* Dropdown menu styles */
+
 .dropdown-menu {
   position: absolute;
   top: 50px;
@@ -77,7 +77,7 @@
 
 .dropdown-item {
   padding: 0.5rem 1rem;
-  color: #34495e;
+  color: #080808;
   text-align: left;
   background-color: transparent;
   border-radius: 5px;
@@ -86,16 +86,16 @@
 }
 
 .dropdown-item:hover {
-  background-color: #e74c3c;
+  background-color: #f74f3c;
   color: #fff;
 }
 
-/* Card styles */
+
 .carousel-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 15rem;
+  margin-top: 200px;
   gap: 10rem;
 }
 
@@ -108,11 +108,11 @@
   border: 1px solid #bdc3c7;
   color: maroon;
   font-weight: bolder;
-  padding: 3rem;
-  width: 280px;
+  padding: 4rem;
+  width: 500px;
   text-align: center;
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  box-shadow: 0px 4px 6px rgba(18, 180, 192, 0.329);
   cursor: pointer;
   transition: transform 0.2s, background-color 0.2s, color 0.2s;
 }
@@ -154,7 +154,7 @@
   transform: translate(-50%, -50%);
   background-color: #ffffff;
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 10px;
   width: 400px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 1000;
@@ -164,7 +164,7 @@
 
 .alert-header {
   background-color: #f44336;
-  color: white;
+  color: rgb(229, 217, 217);
   padding: 10px;
   font-size: 18px;
   font-weight: bold;
@@ -173,14 +173,14 @@
 .alert-content {
   padding: 20px;
   font-size: 16px;
-  color: #333;
+  color: #111010;
 }
 
 .alert-footer {
   display: flex;
   justify-content: space-around;
   padding: 10px;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #443f3f;
 }
 
 .alert-btn {
@@ -231,7 +231,7 @@
 
   .carousel-cards {
     margin: 5rem;
-    gap: 0rem;
+    gap: 5rem;
   }
 }
 

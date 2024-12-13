@@ -22,7 +22,7 @@ const Home = () => {
 
 
       if (location.state?.fromLogin) {
-        const today = new Date();
+        const today = new Date(1/1/2024);
         const specificDates = [25, 26, 27, 28, 29, 30, 31, 1, 2, 3, 4, 5];
         if (specificDates.includes(today.getDate())) {
           setTimeout(() => {
